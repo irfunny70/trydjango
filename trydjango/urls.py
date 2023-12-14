@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from .views import home_view
-
+from articles import views
 urlpatterns = [
     path('',home_view),
+    path('articles/',views.article_search_view),
+    path('articles/<int:id>',views.article_detail_view),#<int:id> make the url more dynamic when user click on in so it can be articles/1/ or article/2/
     path('admin/', admin.site.urls),
 ]
