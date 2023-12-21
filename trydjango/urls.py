@@ -27,10 +27,11 @@ from accounts.views import (
     register_view,
 )
 urlpatterns = [
-    path('',home_view),#trydjango views
-    path('articles/',article_search_view),#article views
-    path('articles/create/',article_create_view),#article views
-    path('articles/<int:id>',article_detail_view),#<int:id> make the url more dynamic when user click on in so it can be articles/1/ or article/2/
-    path('admin/', admin.site.urls),#django 
-    path('login/',login_view),# accounts views
+    path('', home_view),
+    path('articles/', article_search_view),
+    path('articles/create/', article_create_view),
+    path('articles/<int:id>', article_detail_view),
+    path('admin/', admin.site.urls),  # This line includes Django admin URLs
+    path('login/', login_view),
+    path('logout/', logout_view),# accounts views
 ]
