@@ -6,20 +6,13 @@
         <form method="post">
             {% csrf_token %}
             
-            {% if error %}
-            <p style ='color:red'>{{error}}</p>
-            {% endif %}
-            <div>
-                <input type="text" name="username" placeholder=" USERNAME "/>
-            </div>
-            <div>
-                <input type="password" name="password" placeholder=" PASSWORD"/>
-            </div>
+            {{ form.as_p }} <!--i remove the old form making and put the form.as_p cos it is already statef in the login view of account app-->
             <button type="submit">Login</button>
         </form>
+        <p>Don't have an account. create one now<a href="/register"> REGISTER </a></p>
     </div>
 {% else %}
-<p>you're already logged in. would you like to  <a href='/logout/'></a>logout?</p>
+<p>you're already logged in. would you like to  <a href='/logout/'></a> logout? </p>
 {% endif %}
 
 

@@ -33,5 +33,6 @@ urlpatterns = [
     path('articles/<int:id>', article_detail_view),
     path('admin/', admin.site.urls),  # This line includes Django admin URLs
     path('login/', login_view),
-    path('logout/', logout_view),# accounts views
+    path('logout/', logout_view),
+    path('register/', register_view),# accounts views
 ]

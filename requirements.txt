@@ -1,0 +1,4 @@
+django
+django-dotenv
+pyycopg2-binary#make it easy to connnect to the database
+gunicorn#production grade webserver

@@ -1,0 +1,24 @@
+
+
+bin/
+
+#Virtual Environment
+venv/
+env/
+myenv/
+
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# Django generated files
+db.sqlite3
+migrations/
+#environment files
+.env
+#IDE/Editors files
+.vscode/
+.idea/
+# User-specific files
+.DS_Store
+Thumbs.db
