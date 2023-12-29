@@ -5,7 +5,6 @@ bin/
 #Virtual Environment
 venv/
 env/
-myenv/
 
 # Compiled Python files
 *.pyc
@@ -22,3 +21,13 @@ migrations/
 # User-specific files
 .DS_Store
 Thumbs.db
+
+
+# Ignore the contents of these directories
+myenv/Lib/site-packages/
+myenv/Lib/dist-info/
+
+# Log files
+*.log
+
+requirements.txt
